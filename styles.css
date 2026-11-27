@@ -1,0 +1,164 @@
+
+/* ESTILO GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f0;
+    color: #222;
+}
+
+/* CABECERA */
+
+header {
+    background: linear-gradient(135deg, #064d27, #16a34a);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+/* MENÚ */
+
+nav {
+    background-color: #111;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #4ade80;
+}
+
+/* CONTENIDO */
+
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #08783a;
+    border-bottom: 2px solid #16a34a;
+    padding-bottom: 10px;
+}
+
+section p {
+    line-height: 1.7;
+}
+
+/* IMÁGENES */
+
+section > img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* EQUIPOS */
+
+.equipos {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.equipo {
+    background-color: #f0f4f0;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 180px;
+}
+
+.equipo img {
+    width: 100px;
+    height: 110px;
+    object-fit: contain;
+}
+
+.equipo h3 {
+    color: #08783a;
+}
+
+/* LISTAS */
+
+li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+/* VÍDEO */
+
+iframe {
+    width: 100%;
+    max-width: 560px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* ENLACES */
+
+section a {
+    color: #08783a;
+    font-weight: bold;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ADAPTACIÓN A MÓVILES */
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    main {
+        width: 95%;
+    }
+}
+
